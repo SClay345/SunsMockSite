@@ -1,3 +1,9 @@
+html {
+    background-color: #e6e6e6;
+    color:#B95915;
+    text-shadow: 2px 1px black;
+    font-family: 'Bebas Neue', cursive;
+}
 h1 {
     text-align: left;
     color: #63727A;
@@ -38,7 +44,7 @@ a {
     height: 100px;
     justify-content: center;
 }
-#header {
+header {
     position:fixed;
     height: 69 px;
     border-bottom: 1px solid seashell;
@@ -47,40 +53,111 @@ a {
     background-color: black;
     z-index: 1;
 }
-
+body{
+    margin-top: 0px;
+}
 .a {
     grid-area: a;
     height: auto;
     width: 100%;
-    border: rebeccapurple solid 5px;
+    border: rebeccapurple solid 3px;
+    text-align: center;
+    background-color: #000000;
+    background-image: url(/Resources/chris-paul-suns.jpg);
+    background-position: auto;
+   
 }
 .a img {
+    height: 300px;
+    overflow:auto;
+    border: #e56020 solid 3px;
+    opacity: .7;
+
+    justify-content: center;
+}
+.b img {
     height: 250px;
+    width: auto;
+    border: #e56020 solid 3px;
+    opacity: .7;
+    justify-content: center;
+}
+.c img {
+    height: 250px;
+    border: #e56020 solid 3px;
+    width: auto;
+    opacity: .7;
+    justify-content: center;
+}
+.d img {
+    height: 250px;
+    border: #e56020 solid 3px;
+    width: auto;
+    opacity: .7;
+    justify-content: center;
+}
+.e img {
+    height: 250px;
+    border: #e56020 solid 3px;
+    width: auto;
+    opacity: .7;
+    justify-content: center;
 }
 
 #team h1 {
     grid-area: head;
+    color: black;
     text-align: center;
 }
 
 #team {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px; 
+    grid-auto-rows: auto;
     grid-template-areas: "head head"
                         "a b"
                         "c d"
-                        "e " 
-                        "f f"
+                        "e e" 
+                        ; 
+  
+ 
 }
 
 .b {
-    grid-area: b;
+    
     height: auto;
     width: 100%;
-    border: rebeccapurple solid 5px;
+    border: rebeccapurple solid 3px;
+    background-color: #000000;
+    justify-content: center;
 }
 .c {
-    grid-area: c;
+    
     height: auto;
     width: 100%;
-    border: rebeccapurple solid 5px;
+    border: rebeccapurple solid 3px;
+    background-color: #000000;
+}
+.d {
+    
+    height: auto;
+    width: 100%;
+    border: rebeccapurple solid 3px;
+    background-color: #000000;
+}
+.e {
+   
+    height: auto;
+    width: 100%;
+    border: rebeccapurple solid 3px;
+    background-color: #000000;
+}
+.f {
+   
+    height: auto;
+    border: rebeccapurple solid 3px;
+    background-color: #000000;
 }
