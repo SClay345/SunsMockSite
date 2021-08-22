@@ -1,13 +1,20 @@
 html {
-    background-color: #e6e6e6;
+    background-color: #ac6405b0;
     color:#B95915;
     text-shadow: 2px 1px black;
     font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    background-image: url(/Resources/Phoenix-Suns-e1591983761686.png);
 }
-h1 {
+header h1 {
     text-align: left;
     color: #63727A;
     font-size: 45px;
+}
+h1 {
+    color: #63727A;
+    text-align: center;
+    text-shadow: 4px 4px #1d1160 ;
 }
 nav {
     flex-grow: 1;
@@ -35,6 +42,27 @@ a {
     font-size: 45px;
     padding: 1rem;
 }
+.a:hover {
+    background: #1d1160;
+    font-size:50px;
+}
+.b:hover {
+    background: #1d1160;
+    font-size:50px;
+}
+.c:hover {
+    background: #1d1160;
+    font-size:50px;
+}
+.d:hover {
+    background: #1d1160;
+    font-size:50px;
+}
+.e:hover {
+    background: #1d1160;
+    font-size:50px;
+}
+
 #logo {
     width: auto;
     height: 25px;
@@ -45,18 +73,25 @@ a {
     justify-content: center;
 }
 header {
+    
     position:fixed;
     height: 69 px;
-    border-bottom: 1px solid seashell;
+    border-bottom: 1px solid black;
     width: 100%;
     align-items: center;
     background-color: black;
     z-index: 1;
+    
+    
+}
+#top {
+    max-height: 50px;
 }
 body{
     margin-top: 0px;
 }
 .a {
+    
     grid-area: a;
     height: auto;
     width: 100%;
@@ -65,10 +100,14 @@ body{
     background-color: #000000;
     background-image: url(/Resources/chris-paul-suns.jpg);
     background-position: auto;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    
    
 }
 .a img {
-    height: 300px;
+    
     overflow:auto;
     border: #e56020 solid 3px;
     opacity: .7;
@@ -76,88 +115,203 @@ body{
     justify-content: center;
 }
 .b img {
-    height: 250px;
-    width: auto;
+    
+   
     border: #e56020 solid 3px;
     opacity: .7;
     justify-content: center;
 }
 .c img {
-    height: 250px;
+    
     border: #e56020 solid 3px;
     width: auto;
     opacity: .7;
     justify-content: center;
 }
 .d img {
-    height: 250px;
+    
     border: #e56020 solid 3px;
     width: auto;
     opacity: .7;
     justify-content: center;
+    
 }
 .e img {
-    height: 250px;
+  
     border: #e56020 solid 3px;
     width: auto;
     opacity: .7;
     justify-content: center;
+    
+ 
 }
 
 #team h1 {
+    margin-top: 125px;
     grid-area: head;
-    color: black;
+    
     text-align: center;
+    grid-area: head;
+    text-shadow: 2px 2px black;
+    
 }
 
 #team {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+    grid-column-gap: 15px;
+    grid-row-gap: 45px; 
     grid-auto-rows: auto;
-    grid-template-areas: "head head"
-                        "a b"
-                        "c d"
-                        "e e" 
+    grid-template-areas: "head head head head "
+                        "a a b b "
+                        "c c d d "
+                        " . e e ." 
                         ; 
-  
- 
+    justify-content: space-evenly;
+    justify-items: center;
+   grid-template-rows: 200px 400px 400px 400px;
 }
-
-.b {
+#coach {
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(4, 1fr);
+    grid-template-areas: ". coach coach ."
+                         ". coach coach .";
+     grid-column-gap: 15px;
+    grid-row-gap: 5px; 
+    grid-template-rows: 300px 300px;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin:5px 5px;
     
+}
+#mascot {
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(4, 1fr);
+    grid-template: repeat(2,1fr) / repeat(4, 1fr);
+    grid-template-rows: 300px 300px;
+    grid-template-areas: ". gor gor ."
+                         ". gor gor .";
+     grid-column-gap: 15px;
+    grid-row-gap: 5px; 
+    
+    justify-content: space-evenly;
+    justify-items: center;
+    margin:5px 5px;
+}
+#team p {
+    font-size: 35px;
+}
+.b {
+    grid-area: b;
     height: auto;
     width: 100%;
     border: rebeccapurple solid 3px;
     background-color: #000000;
     justify-content: center;
+    background-image: url(/Resources/book.jpg);
+    text-align: center;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
 }
 .c {
-    
+    grid-area: c;
     height: auto;
     width: 100%;
     border: rebeccapurple solid 3px;
     background-color: #000000;
+    background-image: url(/Resources/Mikal.jpeg);
+    text-align: center;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    background-position: auto;
 }
 .d {
-    
+    grid-area: d;
     height: auto;
     width: 100%;
     border: rebeccapurple solid 3px;
     background-color: #000000;
+    background-image: url(/Resources/Jae.jpg);
+    text-align: center;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
 }
 .e {
-   
+    grid-area: e;
     height: auto;
     width: 100%;
     border: rebeccapurple solid 3px;
     background-color: #000000;
+    background-image: url(/Resources/DA.jpeg);
+    text-align: center;
+    background-size: cover;
+    justify-self: center;
+    display: grid;
+    
+
 }
 .f {
    
     height: auto;
     border: rebeccapurple solid 3px;
     background-color: #000000;
+}
+
+#coach h1, #coach h2, #mascot h1, #mascot h2{
+    text-align: center;
+}
+#coach h1, #mascot h1, #team h1 {
+    text-decoration: underline;
+}
+
+#name {
+    grid-area: coach;
+    background-size: cover;
+    justify-self: center;
+    display: grid;
+    height: auto;
+    width: 100%;
+    background-image: url(/Resources/MW.jpg);
+    background-repeat: no-repeat;  
+    
+}
+#gor {
+    grid-area:gor;
+    background-size: cover;
+    justify-self: center;
+    display: grid;
+    height: auto;
+    width: 100%;
+    background-image: url(/Resources/GettyImages-483964519_1477617498301_6655416_ver1.0.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+#name:hover{
+    background: #1d1160;
+    font-size:50px;
+}
+#gor:hover {
+    background: #1d1160;
+    font-size:50px;
+}
+.about {
+    border: black 2px solid;
+    display: block;
+    background: #1d1160;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#splash img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
 }
